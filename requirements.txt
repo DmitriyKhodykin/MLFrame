@@ -1,6 +1,4 @@
-pandas
-pyarrow
+pandas==1.3.4
+pyarrow==6.0.0
 
-catboost
-lightgbm
-sklearn
+scikit-learn==1.0.1
