@@ -148,22 +148,8 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-# Autentification data
-auth/
-
 # Data
-data/*.zip
-data/*.parquet
-data/*.csv
-data/*/*
-
-features/*.zip
-features/*.parquet
-features/*.csv
-features/*/*
-
-models/*/*
-models/*.pickle
-
-# Logs
-logs/
+/.data/*.parquet
+/.data/*.csv
+/.data/*/*
+/.data/

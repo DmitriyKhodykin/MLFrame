@@ -1,29 +1,29 @@
 stages:
   prepare:
-    cmd: python src/prepare.py data/data.parquet
+    cmd: python src/prepare.py .data/.data.parquet
     deps:
       - src/prepare.py
-      - data/data.parquet
+      - .data/.data.parquet
     params:
       - prepare.seed
       - prepare.split
     outs:
-      - data/prepared
+      - .data/prepared
   featurize:
-    cmd: python src/featurization.py data/prepared data/features
+    cmd: python src/featurization.py .data/prepared .data/features
     deps:
-      - data/prepared
+      - .data/prepared
       - src/featurization.py
     params:
       - featurize.max_features
       - featurize.ngrams
     outs:
-      - data/features
+      - .data/features
   train:
-    cmd: python src/train.py data/features model.pkl
+    cmd: python src/train.py .data/features model.pkl
     deps:
       - src/train.py
-      - data/features
+      - .data/features
     params:
       - train.seed
       - train.n_estimators
