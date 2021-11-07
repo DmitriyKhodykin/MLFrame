@@ -1,5 +1,10 @@
 """
 Module for prepare data.
+Docs:
+    Configure Google Drive as remote storage:
+    https://dvc.org/doc/user-guide/setup-google-drive-remote
+
+    DVC user case: https://habr.com/ru/company/funcorp/blog/548942/
 """
 import os
 
