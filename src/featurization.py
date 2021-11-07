@@ -24,7 +24,7 @@ class FeaturesEngineering:
     """
     def __init__(self):
         report = reports["CleanData"]
-        print(f'Loading .data from {report}...')
+        print(f'Loading data from {report}...')
         self.dataframe = pandas.read_parquet(report)
 
     def drop_target(self):
@@ -60,7 +60,7 @@ class FeaturesEngineering:
         address = f'{config.FEATURES_DATA_DIRECTORY}/data_features.parquet'
         print(f'Saving to {address}...')
         self.dataframe.to_parquet(address)
-        print('OK, features .data saved.')
+        print('OK, features data saved.')
 
 
 if __name__ == '__main__':

@@ -149,7 +149,5 @@ crashlytics-build.properties
 fabric.properties
 
 # Data
-/.data/*.parquet
-/.data/*.csv
-/.data/*/*
-/.data/
+/data/*.parquet
+/data/*.csv

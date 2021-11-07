@@ -1,5 +1,5 @@
 """
-Module for prepare .data.
+Module for prepare data.
 Docs:
     Configure Google Drive as remote storage:
     https://dvc.org/doc/user-guide/setup-google-drive-remote
@@ -41,7 +41,7 @@ class CleaningData:
 
     def delete_empty_cols(self) -> pandas.DataFrame:
         """
-        Removes columns with poorly populated .data.
+        Removes columns with poorly populated data.
         :return: Dataframe with reach populated cols
         """
         full_cols = []
@@ -55,10 +55,10 @@ class CleaningData:
 
     def filling_missing_data(self) -> pandas.DataFrame:
         """
-        Filling in missing .data based on available .data.
+        Filling in missing data based on available data.
         :return: Dataframe with reach populated rows
         """
-        print('data_cleaning.py: Filing missing .data...')
+        print('data_cleaning.py: Filing missing data...')
         self.dataframe = self.dataframe.fillna(method='backfill')
         return self.dataframe
 
