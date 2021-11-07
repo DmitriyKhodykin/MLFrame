@@ -16,6 +16,7 @@ jobs:
           # ML workflow runners
           # Install requirements
           #pip install -r requirements.txt
+          #dvc remote add myremote gdrive://1G7yASlTmlk6UCGaIMl20DPLcil3h-3qY
 
           # DVC workflow from dvc.yaml file
           #dvc repro
